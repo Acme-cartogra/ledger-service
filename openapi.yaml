@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  title: "ledger-service"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8111"
+paths:
+  "/ledgers":
+    get:
+      summary: "List ledgers"
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: "Create ledger"
+      responses:
+        "200":
+          description: OK
+  "/ledgers/{id}":
+    get:
+      summary: "Get ledger by ID"
+      responses:
+        "200":
+          description: OK
