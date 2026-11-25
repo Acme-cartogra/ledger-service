@@ -28,12 +28,3 @@ paths:
       responses:
         "200":
           description: OK
-  "/ledgers/{id}/history":
-    parameters:
-      - name: id
-        in: path
-        required: true
-        schema:
-          type: string
-    get:
-      summary: "History of ledger"
