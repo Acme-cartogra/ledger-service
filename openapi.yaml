@@ -37,6 +37,3 @@ paths:
           type: string
     get:
       summary: "History of ledger"
-      responses:
-        "200":
-          description: OK
