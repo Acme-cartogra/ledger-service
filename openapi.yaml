@@ -1,7 +1,7 @@
 openapi: "3.0.3"
 info:
   title: "ledger-service"
-  version: "1.1.0"
+  version: "1.2.0"
 servers:
   - url: "http://localhost:8111"
 paths:
@@ -37,6 +37,18 @@ paths:
           type: string
     get:
       summary: "History of ledger"
+      responses:
+        "200":
+          description: OK
+  "/ledgers/{id}/balance":
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      summary: "Get the balance of a ledger"
       responses:
         "200":
           description: OK
